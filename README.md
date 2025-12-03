@@ -44,63 +44,63 @@ Projeto_Docker/
 
 Criar dois containers (servidor e cliente) comunicando-se por uma rede Docker customizada.
 
-Rede criada manualmente
+- Rede criada manualmente
 
-Servidor Flask respondendo em /
+- Servidor Flask respondendo em /
 
-Cliente fazendo requisições periódicas via curl
+- Cliente fazendo requisições periódicas via curl
 
-Comunicação comprovada via logs
+- Comunicação comprovada via logs
 
 ### Desafio 2 — Volumes e Persistência
 
 Demonstrar persistência de dados usando volumes.
 
-Banco SQLite ou PostgreSQL
+- Banco SQLite ou PostgreSQL
 
-Volume local mantendo os dados mesmo após deletar o container
+- Volume local mantendo os dados mesmo após deletar o container
 
-Testes mostrando a persistência real
+- Testes mostrando a persistência real
 
 ### Desafio 3 — Docker Compose
 
-Orquestrar três serviços interconectados:
+- Orquestrar três serviços interconectados:
 
-Web (Flask)
+- Web (Flask)
 
-Redis (cache)
+- Redis (cache)
 
-PostgreSQL (db)
+- PostgreSQL (db)
 
-Comunicação testada entre web → cache e web → db
+- Comunicação testada entre web → cache e web → db
 
-Compose simulando um ambiente real com múltiplos serviços
+- Compose simulando um ambiente real com múltiplos serviços
 
 ### Desafio 4 — Microsserviços Independentes
 
 Dois microsserviços separados se comunicando via HTTP:
 
-Serviço A → lista de usuários
+- Serviço A → lista de usuários
 
-Serviço B → consome o serviço A e retorna dados enriquecidos
+- Serviço B → consome o serviço A e retorna dados enriquecidos
 
-Cada um com Dockerfile próprio
+- Cada um com Dockerfile próprio
 
-Compose para rodar tudo junto
+- Compose para rodar tudo junto
 
 ### Desafio 5 — Microsserviços com API Gateway
 
 API Gateway centralizando o acesso aos microsserviços.
 
-Serviço de usuários
+- Serviço de usuários
 
-Serviço de pedidos
+- Serviço de pedidos
 
-Gateway redirecionando /users e /orders
+- Gateway redirecionando /users e /orders
 
-Único ponto de entrada para o cliente
+- Único ponto de entrada para o cliente
 
-Arquitetura moderna e escalável
+- Arquitetura moderna e escalável
 
 ## Como Rodar Qualquer Desafio
 
