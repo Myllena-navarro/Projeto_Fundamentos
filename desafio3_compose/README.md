@@ -67,9 +67,9 @@ Arquivo principal que define os três serviços: web, db, cache.
 
   ┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐
 
-  │   cache_service   │  │    db_service    │  │  compose network │
+  │   cache_service   │       │    db_service    │        │  compose network │
 
-  │ Redis (6379)      │  │ PostgreSQL (5432)│  │  rede interna    │
+  │ Redis (6379)      │       │ PostgreSQL (5432)│        │  rede interna    │
 
   └──────────────────┘  └──────────────────┘  └──────────────────┘
 
