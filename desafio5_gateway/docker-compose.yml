@@ -1,0 +1,21 @@
+services:
+  users_service:
+    build: ./users_service
+    container_name: users_service
+    ports:
+      - "6001:6001"
+
+  orders_service:
+    build: ./orders_service
+    container_name: orders_service
+    ports:
+      - "6002:6002"
+
+  gateway:
+    build: ./gateway
+    container_name: gateway_service
+    depends_on:
+      - users_service
+      - orders_service
+    ports:
+      - "8000:8000"

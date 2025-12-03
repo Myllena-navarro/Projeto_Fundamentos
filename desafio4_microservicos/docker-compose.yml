@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  servico_a:
+    build: ./servico_a
+    container_name: servico_a
+    ports:
+      - "5001:5001"
+
+  servico_b:
+    build: ./servico_b
+    container_name: servico_b
+    depends_on:
+      - servico_a
+    ports:
+      - "5002:5002"
